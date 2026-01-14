@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NoteHub — Authenticated Notes App
 
-## Getting Started
+NoteHub is web application built with Next.js that allows users to register, log in, and manage personal notes.
 
-First, run the development server:
+🚀 Live Demo:
+https://09-auth-one-sigma.vercel.app/
 
-```bash
+---
+
+## Overview
+
+The application provides:
+
+- User registration and authentication
+- Creating and viewing personal notes
+- Protected routes for authenticated users
+- Deployment on Vercel
+
+---
+
+## Technologies Used
+
+- Next.js
+- React
+- TypeScript
+- API Routes
+- Vercel
+
+---
+
+## Project Structure
+
+09-auth/
+├── app/ # Next.js App Router pages and layouts  
+│ ├── auth/ # Authentication pages (login / register)  
+│ ├── notes/ # Notes pages (protected routes)  
+│ └── layout.tsx # Root layout  
+├── components/ # Reusable UI components  
+├── lib/ # Utility functions and helpers  
+├── middleware.ts # Route protection and auth middleware  
+├── next.config.ts # Next.js configuration  
+├── package.json  
+└── README.md
+
+---
+
+## Features
+
+- Authentication (Sign up / Sign in)
+- Notes management
+- Protected pages
+- Responsive layout
+
+---
+
+## Running Locally
+
+```
+git clone https://github.com/Yurii-Voronich/NoteHub-App.git
+cd NoteHub-App
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+The project is deployed on Vercel.
 
-To learn more about Next.js, take a look at the following resources:
+Live URL:
+https://09-auth-one-sigma.vercel.app/
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Environment Variables
 
-## Deploy on Vercel
+Create .env.local file:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+NEXT_PUBLIC_API_URL=...
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
